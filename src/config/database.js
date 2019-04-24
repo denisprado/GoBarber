@@ -1,10 +1,11 @@
 module.exports = {
   dialect: 'postgres',
-  host: '127.0.0.1',
-  username: 'docker',
-  password: 'docker',
-  database: 'gonodemodule2',
+  host: 'isilo.db.elephantsql.com',
+  username: 'fxxskgpg',
+  password: '66ct5AnEUhpPa1is03AvxWw-qT_dkNlA',
+  database: 'fxxskgpg',
   operatorAliases: false,
+  ssl: true,
   define: {
     timestamps: true,
     underscored: true,

@@ -1,4 +1,5 @@
 const { User, Appointment } = require('../models')
+const moment = require('moment')
 
 class AppointmentController {
   async create (req, res) {
@@ -18,6 +19,20 @@ class AppointmentController {
     })
 
     return res.redirect('/app/dashboard')
+  }
+
+  async list (req, res) {
+    const { id } = req.session.user
+    const today = new Date()
+
+    const appointments = await Appointment.findAll({
+      where: {
+        provider_id: id,
+        date: today[0].getTime()
+      }
+    })
+
+    return res.render('appointments/list', { appointments })
   }
 }
 

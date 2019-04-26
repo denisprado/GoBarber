@@ -184,13 +184,15 @@ body {
   color: #444;
 }
 
-ul.providers {
+ul.providers,
+ul.appointments {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.provider {
+.provider,
+.appointment {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -200,23 +202,27 @@ ul.providers {
   justify-content: space-between;
 }
 
-.provider div {
+.provider div,
+.appointment div {
   display: flex;
   align-items: center;
 }
 
-.provider img {
+.provider img,
+.appointment img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
 
-.provider strong {
+.provider strong,
+.appointment strong {
   margin-left: 15px;
   color: #444;
 }
 
-.provider a {
+.provider a,
+.appointment a {
   background: #7159c1;
   padding: 5px 10px;
   font-weight: bold;

@@ -1,0 +1,16 @@
+{% extends "_layouts/default.njk" %} {% block body %}
+<div class="content">
+  <strong>Horários agendados</strong>
+  <ul class="appointments">
+    {% for appointment in appointments %}
+    <li class="appointment">
+      <p>{{ appointment.date }}</p>
+      <div>
+        <img src="/files/{{ provider.avatar }}" alt="{{ provider.name }}">
+        <strong>{{provider.name}}</strong>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% endblock %}

@@ -28,7 +28,7 @@ class AppointmentController {
     const appointments = await Appointment.findAll({
       where: {
         provider_id: id,
-        date: today[0].getTime()
+        date: today.getTime()
       }
     })
 

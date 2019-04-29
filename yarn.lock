@@ -1439,6 +1439,13 @@ connect-flash@^0.1.1:
   resolved "https://registry.yarnpkg.com/connect-flash/-/connect-flash-0.1.1.tgz#d8630f26d95a7f851f9956b1e8cc6732f3b6aa30"
   integrity sha1-2GMPJtlaf4UfmVax6MxnMvO2qjA=
 
+connect-loki@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/connect-loki/-/connect-loki-1.1.0.tgz#21e475dda3c148229a2db86f57d11d42db83ebd3"
+  integrity sha512-JQ4Ueh7m1/I+E+DvzOpyZSCjTJZetKy7Zob8C8ly2ecH7TmC4puYz0y8s8/jyJbVGdjuDyQOxcf82NEl0tOmvg==
+  dependencies:
+    lokijs "^1.5.0"
+
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
@@ -3438,6 +3445,11 @@ log-chopper@^1.0.2:
   integrity sha512-tEWS6Fb+Xv0yLChJ6saA1DP3H1yPL0PfiIN7SDJ+U/CyP+fD4G/dhKfow+P5UuJWi6BdE4mUcPkJclGXCWxDrg==
   dependencies:
     byline "5.x"
+
+lokijs@^1.5.0:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/lokijs/-/lokijs-1.5.6.tgz#6de6b8c3ff7a972fd0104169f81e7ddc244c029f"
+  integrity sha512-xJoDXy8TASTjmXMKr4F8vvNUCu4dqlwY5gmn0g5BajGt1GM3goDCafNiGAh/sfrWgkfWu1J4OfsxWm8yrWweJA==
 
 lowercase-keys@1.0.0:
   version "1.0.0"
